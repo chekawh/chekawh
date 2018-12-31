@@ -130,7 +130,11 @@ message.channel.send(`Se ha eliminado: ${cantidad} mensajes. Ahora se está más
     .addField("Bannear miembros (ADMIN)", ".banear [usuario] [razon]")
     .addField("Limpiar mensajes", ".limpiar [cantidad]")
     .addField("Personas con el mismo rol", ".rol [nombredelrol]")
-    .addField("Info del Servidor", ".servidor");
+    .addField("Info del Servidor", ".servidor")
+    .setDescription("Opciones de bot de Música.")
+    .addField("Usar TeloDoyTodo", ";;play [nombre/cancion] | Luego ;;[numero de la pista]")
+    .addField("Usar TeloDoyTodo #2", "!play [Cantante + Cancion]")
+    .addField("Usar TeloDoyTodo #3", ".music play [nombre/cancion] | Luego [numero]");
 
 message.channel.send({embed});
   }
